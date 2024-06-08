@@ -1,0 +1,158 @@
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  padding-right: 10px;
+  min-width: 384px;
+}
+
+.calendar-headline {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.calendar-headline-month {
+  font-weight: 600;
+}
+
+.calendar-headline-controls {
+  display: flex;
+}
+
+.calendar-headline-control {
+  cursor: pointer;
+}
+
+.calendar-headline-control:hover {
+  text-decoration: underline;
+}
+
+.calendar-headline-controls-today {
+  margin: 0 10px;
+}
+
+.calendar-weeks-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(81, 81, 81);
+}
+
+.calendar-weeks-grid-cell {
+  text-align: center;
+}
+
+.calendar-grid-cell-inactive {
+  color: #9e9e9e;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  border-top: 1px solid rgb(190, 190, 190);
+  border-left: 1px solid rgb(190, 190, 190);
+}
+
+.calendar-grid-cell {
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  border-right: 1px solid rgb(190, 190, 190);
+  cursor: pointer;
+}
+
+.calendar-grid-cell:hover {
+  background: #9ba3bf;
+}
+
+.calendar-grid-cell-active {
+  background: #9ba3bf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule {
+  margin-left: 10px;
+}
+
+.schedule-headline {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.modal-window {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.modal-window-input{
+  border-radius: 16px;
+  border: black 1px solid;
+  font-size: medium;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 4px;
+}
+
+.modal-window-input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-window-content {
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  min-width: 350px;
+  height: auto;
+}
+
+.modal-window-button-add{
+  font-weight: bold;
+  min-height: 35px;
+  min-width: 70px;
+  border-radius: 16px;
+  background-color: dodgerblue;
+  color: white;
+}
+
+.modal-window-button-back{
+  font-weight: bold;
+  min-height: 35px;
+  min-width: 70px;
+  border-radius: 16px;
+}
+
+.modal-window-buttons-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-tasks-wrapper{
+  display: flex;
+  padding: 3px;
+}
+
+.modal-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
